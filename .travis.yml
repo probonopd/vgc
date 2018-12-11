@@ -46,9 +46,8 @@ script:
       -DPYTHON_INCLUDE_DIR=$(python-config --prefix)/include/python3.6m \
       ..
   - make -j$(nproc)
-  - make DESTDIR=appdir -j$(nproc) install
   - mkdir -p appdir/usr/share/icons/128x128/apps ; cp ../vgc.png appdir/usr/share/icons/128x128/apps/
-  - mkdir -p appdir/usr/share/applications ; cp ../vgc.deksktop appdir/usr/share/applications
+  - mkdir -p appdir/usr/share/applications ; cp ../vgc.desktop appdir/usr/share/applications
   - find appdir/
   - wget -c -nv "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
   - chmod a+x linuxdeployqt-continuous-x86_64.AppImage
