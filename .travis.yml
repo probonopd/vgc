@@ -46,6 +46,7 @@ script:
       -DPYTHON_INCLUDE_DIR=$(python-config --prefix)/include/python3.6m \
       ..
   - make -j$(nproc)
+  - mkdir appdir/usr/ ; cp -r usr/ lib/ appdir/
   - mkdir -p appdir/usr/share/icons/128x128/apps ; cp ../vgc.png appdir/usr/share/icons/128x128/apps/
   - mkdir -p appdir/usr/share/applications ; cp ../vgc.desktop appdir/usr/share/applications
   - find appdir/
