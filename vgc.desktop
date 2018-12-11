@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=VGC
+Comment=Next-Gen Graphic Design and 2D Animation 
+Exec=vgc_app_illustration
+Icon=vgc
+Terminal=false
+Type=Application
+Categories=Graphics;
